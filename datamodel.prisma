@@ -1,0 +1,30 @@
+type User {
+  id: ID! @id
+  email: String! @unipue
+  username: String!
+  password: String!
+  calendar: Calendar @relation(link: INLINE)
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}
+
+type Calendar {
+  id: ID! @id
+  user: User!
+  todos: [Todo!]!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}
+
+type Todo {
+  id: ID! @id
+  calendar: Calendar!
+  title: String!
+  year: Int!
+  month: Int!
+  day: Int!
+  isDone: Boolean! @default(value: false)
+  isCanceled: Boolean! @default(value: false)
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}
