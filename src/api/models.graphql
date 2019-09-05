@@ -1,0 +1,30 @@
+type User {
+  id: ID!
+  email: String!
+  username: String!
+  password: String!
+  calendar: Calendar
+  createdAt: String!
+  updatedAt: String!
+}
+
+type Calendar {
+  id: ID!
+  user: User!
+  todoes: [Todo!]!
+  createdAt: String!
+  updatedAt: String!
+}
+
+type Todo {
+  id: ID!
+  calendar: Calendar!
+  title: String!
+  year: Int!
+  month: Int!
+  day: Int!
+  isDone: Boolean!
+  isCanceled: Boolean!
+  createdAt: String!
+  updatedAt: String!
+}

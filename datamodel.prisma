@@ -11,7 +11,7 @@ type User {
 type Calendar {
   id: ID! @id
   user: User!
-  todos: [Todo!]!
+  todoes: [Todo!]!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }
