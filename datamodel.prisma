@@ -1,6 +1,8 @@
 type User {
   id: ID! @id
-  email: String! @unipue
+  email: String! @unique
+  emailSecret: String
+  emailConfirmed: Boolean! @default(value: false)
   username: String!
   password: String!
   calendar: Calendar @relation(link: INLINE)

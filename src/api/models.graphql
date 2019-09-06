@@ -1,6 +1,8 @@
 type User {
   id: ID!
   email: String!
+  emailSecret: String
+  emailConfirmed: Boolean!
   username: String!
   password: String!
   calendar: Calendar
