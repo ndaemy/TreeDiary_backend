@@ -4,11 +4,11 @@ TreeDiary backend (Node.js, GraphQL)
 
 ## User Stories
 
-- [ ] Create account
+- [x] Create account
+- [x] Request secret code to email
+- [ ] Confirm email
 - [ ] Sign in / out
 - [ ] See my profile
-- [ ] Request secret code to email
-- [ ] Confirm email
 - [ ] Update my profile
 - [ ] Delete my profile
 
