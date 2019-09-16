@@ -4,7 +4,7 @@ type User {
   emailSecret: String
   emailConfirmed: Boolean! @default(value: false)
   username: String!
-  password: String!
+  loginSecret: String
   calendar: Calendar @relation(link: INLINE)
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
